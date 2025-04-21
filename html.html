@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Status Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .status-box {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .status {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .plant {
+      color: green;
+    }
+
+    .fish {
+      color: #0077b6;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0f6ec8;
+    }
+  </style>
+</head>
+<body>
+  <div class="status-box">
+    <div class="status plant">🌿 Plant Status - Healthy</div>
+    <div class="status fish">🐟 Fish Status - Healthy</div>
+    <button class="btn" onclick="window.location.href='https://blynk.cloud/dashboard/421943/templates/edit/944770/dashboard'">
+      Click for Sensor Data
+    </button>
+  </div>
+</body>
+</html>
